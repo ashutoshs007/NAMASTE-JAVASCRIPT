@@ -1,27 +1,16 @@
- /*Hoisting is JS*/
- 
- 
-//  getName();/**this will print"Namaste JS" */
-//  console.log(x);/*this will print undefined*/
-//  console.log(getName);/*this will print the exact function again*/
+var x = 1;
+a(); 
+b();
+console.log(x);
 
- 
- 
- var x=8;
-
-
- 
-
-function getName(){
-    console.log("Namaste JavaScript");
+function a(){
+    var x=10;
+    console.log(x);
+}
+function b(){
+    var x=100;
+    console.log(x);
 }
 
 
-
-// console.log(getName);
- getName();/*Function invocation*/
- console.log(x);
-
-
-
-
+//global execution context and call stack
