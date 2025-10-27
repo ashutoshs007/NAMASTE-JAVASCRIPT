@@ -1,16 +1,11 @@
-var x = 1;
-a(); 
-b();
-console.log(x);
-
-function a(){
-    var x=10;
-    console.log(x);
-}
-function b(){
-    var x=100;
-    console.log(x);
-}
+// var a=10;
+// function b() {
+//     var x=10;
+// }
 
 
-//global execution context and call stack
+
+console.log(a);
+var a=8;
+
+console.log(a);
