@@ -1,10 +1,13 @@
-let a;
+let a=1900;
 
-const b=1000;
+const b;
 
-a=10;
-console.log(a);
+b=1000;
 
-//we cannot do the same thing in case of const
+//we cannot do the same previous pushed thing in case of const
 //like we cannot initialize it later after declaration
+
+//SyntaxError :Missing initializer in const declaration
+
+
 
