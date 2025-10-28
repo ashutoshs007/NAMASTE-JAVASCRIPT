@@ -1,10 +1,4 @@
-function a(){
-    var b=10;
-    c();
+let a=10;
+console.log(a);
+var b =100;
  
-    function c(){
-        console.log(b);
-}
-}
-
-a();
