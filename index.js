@@ -1,13 +1,10 @@
-let a=1900;
+let a =1000;
 
-const b;
+const b=1000;
 
-b=1000;
+b=10000;
 
-//we cannot do the same previous pushed thing in case of const
-//like we cannot initialize it later after declaration
+//it gives us TypeError: Assignment to a constant variable
 
-//SyntaxError :Missing initializer in const declaration
-
-
-
+a=10;
+console.log(a);
