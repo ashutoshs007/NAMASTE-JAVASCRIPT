@@ -22,3 +22,9 @@ var a=20;
 {
     let a=20;
 }
+
+//given belwo is not ileegal shadowing 
+let a=20;
+function x (){
+    var a=20;
+}
