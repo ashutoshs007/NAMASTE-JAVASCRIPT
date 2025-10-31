@@ -1,23 +1,24 @@
-let b=100;
+const c=100;
 
-{
-    var a=10;
-    let b=20;
+function x(){
     const c=30;
-    console.log(a);
-    console.log(b);
     console.log(c);
 }
-console.log(b);
+x();
+console.log(c);
 
-//avar a=10 changed value of var a=100, value got changed  both in block scope and global scope 
-// and now both refers to same value .
+//even in the function scope ,the shadowing behaves in a similar way.
 
-// Block
-// b: 20
-// c: 30
-// Script
-// b: 100
-// Global
-// a: 10
-// Window
+
+//given  code below is example of illegal shadowing
+let a=20;
+{
+    var a=20;
+}
+
+//but below one is correct
+
+var a=20;
+{
+    let a=20;
+}
