@@ -1,16 +1,25 @@
-function x() {
+function z(){
+
+    var b =900;
+    function x() {
     var a=8;
     function y(){
-        console.log(a);
+        console.log(a,b);
         }
 
-        a=100;
-        return y;
+       y();
 }
-var z= x();
-console.log(z);
+x();
+}
+z();
 
-//....thousand lines of code
 
-z();  //prints 8 (even if all execution context vanished after writing 1000 liens of code ,it remebers the root where it came from)  (this is called closures)
-
+// > Uses of Closures:
+// — Module Design Pattern
+// — Currying
+// — Functions like once
+// — memoize
+// — maintaining state in async world
+// — setTimeouts
+// — Iterators
+// — and many more...
