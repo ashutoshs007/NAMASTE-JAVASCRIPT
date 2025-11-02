@@ -1,34 +1,14 @@
-//function alongwith its lexical scope forms a closure
-
-
-function x(){
-    // var a =8;
-
-    // you can assign a function to a variable
-
-
-    // var a =function y(){
-    //     console.log(a);
-    // };
-
-
-    
-    // function y(){
-    //     console.log(a);
-    // }
-
-
-
-
- y();
+function x() {
+    var a=8;
+    function y(){
+        console.log(a);
+        }
+        return y;
 }
-x();
+var z= x();
+console.log(z);
 
+//....thousand lines of code
 
+z();  //prints 8 (even if all execution context vanished after writing 1000 liens of code ,it remebers the root where it came from)  (this is called closures)
 
-
-//you can pass a function as a parameter as well
-
-// x( function y(){
-//         console.log(a);
-//     });
